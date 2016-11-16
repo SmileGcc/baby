@@ -1,7 +1,6 @@
 'use strict';
 
-var expressValidator = require('express-validator'),
-    utils = require('../lib/utils');
+var expressValidator = require('express-validator');
 
 //自定义参数验证方法集
 var customValidators = {};

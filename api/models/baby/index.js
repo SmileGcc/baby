@@ -5,5 +5,7 @@ paths.forEach(function (path) {
     require(path);
 });
 
-exports.BaBy = mongoose.model('BaBy');
+exports.Baby = mongoose.model('Baby');
 exports.User = mongoose.model('User');
+exports.Post = mongoose.model('Post');
+exports.Log = mongoose.model('Log');

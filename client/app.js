@@ -5,8 +5,8 @@ const {UserActions} = require('./actions/index.js');
 App(Provider(configure())({
 
     onLaunch: function () {
-        this.code = this.getUser().code,
-            this.loginSub = this.store.subscribe(this.onLogin);
+        this.code = this.getUser().code;
+        this.loginSub = this.store.subscribe(this.onLogin);
         this.store.dispatch(UserActions.login());
     },
     onShow: function () {
@@ -21,7 +21,7 @@ App(Provider(configure())({
 
         if (old !== this.code) {
             console.log('xx');
-            this.store.dispatch(UserActions.getSession({}));
+            this.store.dispatch(UserActions.getSession({a: 1, b: 2}));
         }
     },
     getUser: function () {

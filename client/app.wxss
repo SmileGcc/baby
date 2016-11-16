@@ -13,6 +13,15 @@ page {
     box-sizing: border-box;
 }
 
+.menu {
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    left: -50%;
+    background-color: red;
+    margin-bottom: 100 rpx;
+}
+
 .baby-tabbar {
     display: flex;
     position: absolute;
@@ -27,10 +36,7 @@ page {
     display: block;
     flex: 1;
     padding: 7px 0 0;
-    font-size: 0;
-    color: #999999;
     text-align: center;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .tabbar-icon {

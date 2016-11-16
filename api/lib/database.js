@@ -1,7 +1,7 @@
 'use strict';
 
 var mongoose = require('mongoose');
-mongoose.Promise = require('bluebird');
+mongoose.Promise = global.Promise;
 
 var db = function () {
     return {

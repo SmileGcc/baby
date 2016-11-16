@@ -19,6 +19,7 @@ options = {
 
 app = module.exports = express();
 app.use(kraken(options));
+app.set('etag', false);
 app.on('start', function () {
     //global.MongoDatabase = app.kraken.get('databaseConfig:database');
 });

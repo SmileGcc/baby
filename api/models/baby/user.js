@@ -12,11 +12,11 @@ var UserSchema = new Schema({
     profile: {
         name: {type: String},
         age: {type: Number},
-        sex: {type: Number},
+        sex: {type: Number}
     },
     status: {type: Number},                     // 0 不可见  1 可见  2 删除
-    updated_at: {type: Date},                   // 修改时间
-    created_at: {type: Date}                    // 创建时间
+    updatedAt: {type: Date},                   // 修改时间
+    createdAt: {type: Date}                    // 创建时间
 }, {autoIndex: false});
 
 // UserSchema.path('password').set(function (password) {

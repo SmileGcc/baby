@@ -1,6 +1,7 @@
 'use strict';
 
-var fs = require('fs'), path = require('path');
+var fs = require('fs'),
+    path = require('path');
 
 function getPath(dir, paths) {
     if (!paths) {

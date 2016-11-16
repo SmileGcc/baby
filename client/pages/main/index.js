@@ -6,11 +6,14 @@ var app = getApp();
 
 const pageConfig = {
     data: {
+        menuStatus: 0,
+        menuAnimate: {},
         user: {},
     },
     onLoad: function (options) {
         console.log('onLoad');
         //this.UserActions.getUser();
+        this.animation = wx.createAnimation();
     },
     onReady: function () {
         console.log('onReady');
@@ -23,27 +26,32 @@ const pageConfig = {
     },
     onHide: function () {
         // 页面隐藏
-
     },
     onUnload: function () {
         // 页面关闭
+    },
+    onPullDownRefresh: function () {
 
     },
-    // onPullDownRefresh: function(){
+    onReachBottom: function () {
 
-    // },
-    // onReachBottom: function() {
-    //   // Do something when page reach bottom.
-    // },
-    // bindViewTap: function() {
-    //   wx.navigateTo({
-    //     url: '../logs/logs'
-    //   })
-    // },
+    },
+    menuTrigger: function () {
+        let x = 0;
+        if (!this.data.menuStatus) {
+            this.setData({menuStatus: 1});
+            x = 200;
+        } else {
+            this.setData({menuStatus: 0});
+            x = 0;
+        }
+        this.animation.translate(x).step({duration: 200});
+        this.setData({menuAnimate: this.animation.export()});
+    }
 };
 
 
-const mapStateToData = state =>({
+const mapStateToData = state => ({
     user: state.user.me
 });
 
