@@ -1,0 +1,16 @@
+<!--index.wxml-->
+
+<view class="container">
+
+  <view><text>sdfasdfsdf</text></view>
+
+  <!--<swiper class="viewPager" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{games}}"  wx:key="unique">
+      <swiper-item>
+        <view><text>{{item.name}}</text></view>
+      </swiper-item>
+    </block>
+  </swiper>-->
+  <include src="/pages/common/tabbar.wxml"/>
+</view>
+

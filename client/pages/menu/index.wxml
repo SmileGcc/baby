@@ -1,0 +1,4 @@
+<view class="container">
+  <view animation="{{animation}}" class="view">我在做动画</view>
+  <button type="primary" bindtap="easeIn">旋转</button>
+</view>

@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view scroll-y="true" style="width: 100%">
+      <block wx:for="{{photos}}"  wx:key="unique">
+          <image bindtap="onPreview" src="{{item}}"></image>
+      </block>
+  </scroll-view>
+</view>

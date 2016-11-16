@@ -1,0 +1,14 @@
+/**index.wxss**/
+.container {
+
+}
+
+.menuBar {
+    white-space: nowrap;
+    height: 30px;
+}
+
+.viewPager {
+    height: 100%;
+    width: 100%;
+}

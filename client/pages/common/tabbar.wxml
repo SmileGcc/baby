@@ -1,0 +1,13 @@
+<!--tabbar.wxml-->
+
+<view class="baby-tabbar">
+  <navigator class="tabbar-item" url="../menu/index">
+    <image src="/images/menu_32.png" class="tabbar-icon"></image>
+  </navigator>
+   <navigator class="tabbar-item" url="../post/index">
+    <image class="tabbar-icon" src="/images/add_32.png"   background-size="cover"></image>
+  </navigator>
+   <navigator class="tabbar-item" url="../me/index">
+    <image src="/images/me_32.png"  class="tabbar-icon"></image>
+  </navigator>       
+</view>
