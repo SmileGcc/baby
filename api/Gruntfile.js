@@ -9,6 +9,7 @@ module.exports = function (grunt) {
     });
 
 
+
     // Register group tasks
     grunt.registerTask('build', ['eslint', 'eslint', 'copyto']);
 

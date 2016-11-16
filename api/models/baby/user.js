@@ -19,11 +19,11 @@ var UserSchema = new Schema({
     created_at: {type: Date}                    // 创建时间
 }, {autoIndex: false});
 
-UserSchema.path('password').set(function (password) {
-    this._password = password;
-    this.hashed_password = this.encryptPassword(password);
-}).get(function () {
-    return this._password;
-});
+// UserSchema.path('password').set(function (password) {
+//     this._password = password;
+//     this.hashed_password = this.encryptPassword(password);
+// }).get(function () {
+//     return this._password;
+// });
 
 mongoose.model('User', UserSchema);
