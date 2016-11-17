@@ -19,13 +19,13 @@ page {
     width: 50%;
     left: -50%;
     background-color: red;
-    margin-bottom: 100 rpx;
+    margin-bottom: 100rpx;
 }
 
 .baby-tabbar {
     display: flex;
     position: absolute;
-    height: 100 rpx;
+    height: 100rpx;
     z-index: 500;
     bottom: 0;
     width: 100%;
@@ -41,6 +41,6 @@ page {
 
 .tabbar-icon {
     display: inline-block;
-    width: 64 rpx;
-    height: 64 rpx;
+    width: 64rpx;
+    height: 64rpx;
 }

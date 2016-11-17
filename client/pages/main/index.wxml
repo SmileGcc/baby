@@ -11,7 +11,7 @@
       </swiper-item>
     </block>
   </swiper>-->
-   <include src="/pages/common/menu.wxml"/>
+  <include src="/pages/common/menu.wxml"/>
   <include src="/pages/common/tabbar.wxml"/>
 
 

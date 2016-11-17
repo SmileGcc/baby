@@ -2,5 +2,9 @@ module.exports = [
     'login',
     'chooseImage',
     'previewImage',
-    'getImageInfo'
+    'getImageInfo',
+    
+
+    'getStorageInfo',
+    'getStorage'
 ];

@@ -1,0 +1,7 @@
+<!--menu.wxml-->
+<view class="menu" animation="{{menuAnimate}}">
+ shitsdfsdf
+  <!--<button type="primary" bindtap="menuAnimate">旋转</button>-->
+</view>
+
+<!--<view  class="{{menuStatus}}"> 1123123123 </view>-->
