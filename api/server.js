@@ -1,5 +1,6 @@
 'use strict';
 global.$ROOT = __dirname;
+
 var app = require('./index'),
     fs = require('fs'),
     //http = require('http'),

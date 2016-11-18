@@ -1,14 +1,19 @@
 const {connect} = require('../../libs/wechat-redux.js');
 import {bindActionCreators} from "../../libs/redux";
 const {PhotoActions} = require('../../actions/index.js');
-
+// const { Rpc } = require('../../qiniu/index.js');
+const {Auth, ImgOps, Conf, Rs, Rpc} = require('../../qiniu/qiniu.js');
 const pageConfig = {
     data: {
         photos: []
     },
     onLoad: function (options) {
+        var putPolicy = new Auth.PutPolicy2(
+            {scope: "<Bucket>:<Key>"}
+        );
         this.setData({photos: []});
         this.PhotoActions.getLocalPhotos();
+
     },
     onReady: function () {
         console.log('onReady123');
@@ -29,7 +34,7 @@ const mapStateToData = state => ({
     photos: state.photo.upload
 });
 
-const mapDispatchToPage = dispatch =>({
+const mapDispatchToPage = dispatch => ({
     PhotoActions: bindActionCreators(PhotoActions, dispatch)
 });
 

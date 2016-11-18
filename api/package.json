@@ -19,6 +19,7 @@
     "kraken-js": "^2.1.0",
     "moment": "^2.16.0",
     "mongoose": "^4.6.7",
+      "qiniu": "^6.1.13",
     "spdy": "^3.4.4"
   },
   "devDependencies": {

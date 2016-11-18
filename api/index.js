@@ -4,9 +4,11 @@ var express = require('express');
 var kraken = require('kraken-js');
 
 var db = require('./lib/database'),
+    myClass = require('./lib/myClass'),
     validator = require('./lib/validator')(),
     redis = require('./redis/redis');
 
+global.$ClientError = myClass.ClientError;
 var options, app;
 
 options = {

@@ -40,12 +40,12 @@ const pageConfig = {
         let x = 0;
         if (!this.data.menuStatus) {
             this.setData({menuStatus: 1});
-            x = 200;
+            x = '100%';
         } else {
             this.setData({menuStatus: 0});
-            x = 0;
+            x = '-100%';
         }
-        this.animation.translate(x).step({duration: 200});
+        this.animation.translate(x).step({duration: 300});
         this.setData({menuAnimate: this.animation.export()});
     }
 };
