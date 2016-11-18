@@ -8,7 +8,7 @@ const appConfig = Provider(configure())({
     },
     onLaunch: function () {
         //this.UserActions.login();
-        init(this);
+        //init(this);
         
         //this.loginSub = this.store.subscribe(this.onLogin);
     

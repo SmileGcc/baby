@@ -1,6 +1,8 @@
 const {connect} = require('../../libs/wechat-redux.js');
 import {bindActionCreators} from "../../libs/redux";
 const {UserActions} = require('../../actions/index.js');
+// const { Rpc } = require('../../qiniu/index.js');
+const {Auth, ImgOps, Conf, Rs, Rpc} = require('../../libs/qiniu.js');
 
 var app = getApp();
 
@@ -12,7 +14,11 @@ const pageConfig = {
     },
     onLoad: function (options) {
         console.log('onLoad');
-        //this.UserActions.getUser();
+        this.UserActions.login().then(code => {
+            if(code){
+                this.UserActions.getSession({a:1, b:2});
+            }
+        }).catch((err) => {});
         this.animation = wx.createAnimation();
     },
     onReady: function () {
